@@ -1,0 +1,25 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "node index.js",
+    "electron": "electron .",
+    "dev": "cross-env NODE_ENV=development  node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.0.5",
+    "electron": "^1.7.8",
+    "laravel-mix": "^1.4.5",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "d3": "^4.10.2",
+    "fs": "0.0.1-security",
+    "jquery": "^3.2.1"
+  }
+}

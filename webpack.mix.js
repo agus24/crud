@@ -1,0 +1,41 @@
+let mix = require('laravel-mix');
+mix.js([
+        // "resources/jquery.min.js",
+        // "resources/js/libs/jquery/jquery-1.11.2.min.js",
+        // "resources/js/libs/jquery/jquery-migrate-1.2.1.min.js",
+        // "resources/js/libs/bootstrap/bootstrap.min.js",
+        "app.js",
+        "resources/js/libs/spin.js/spin.min.js",
+        "resources/js/libs/autosize/jquery.autosize.min.js",
+        "resources/js/libs/moment/moment.min.js",
+        "resources/js/libs/flot/jquery.flot.min.js",
+        "resources/js/libs/flot/jquery.flot.time.min.js",
+        "resources/js/libs/flot/jquery.flot.resize.min.js",
+        "resources/js/libs/flot/jquery.flot.orderBars.js",
+        "resources/js/libs/flot/jquery.flot.pie.js",
+        "resources/js/libs/flot/curvedLines.js",
+        "resources/js/libs/jquery-knob/jquery.knob.min.js",
+        "resources/js/libs/sparkline/jquery.sparkline.min.js",
+        "resources/js/libs/nanoscroller/jquery.nanoscroller.min.js",
+        "resources/js/libs/d3/d3.min.js",
+        "resources/js/libs/d3/d3.v3.js",
+        "resources/js/libs/rickshaw/rickshaw.min.js",
+        "resources/js/core/source/App.js",
+        "resources/js/core/source/AppNavigation.js",
+        "resources/js/core/source/AppOffcanvas.js",
+        "resources/js/core/source/AppCard.js",
+        "resources/js/core/source/AppForm.js",
+        "resources/js/core/source/AppNavSearch.js",
+        "resources/js/core/source/AppVendor.js",
+        "resources/js/core/demo/Demo.js",
+        "resources/js/core/demo/DemoDashboard.js"
+    ], 'public/build/app.js')
+    .styles([
+        "resources/css/theme-default/bootstrap.css",
+        "resources/css/theme-default/materialadmin.css",
+        "resources/css/theme-default/font-awesome.min.css",
+        "resources/css/theme-default/material-design-iconic-font.min.css",
+        "resources/css/theme-default/libs/rickshaw/rickshaw.css",
+        "resources/css/theme-default/libs/morris/morris.core.css",
+    ],'public/build/app.css')
+   .setPublicPath('public');
